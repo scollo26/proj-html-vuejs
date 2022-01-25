@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid">
-    <div class="row row-cols-2 d-flex  justify-content-evenly" >
+    <div class="row black row-cols-2 d-flex  justify-content-evenly" >
         <div class="col-6 text-start ">
             <div class="company ">
                 <h5 class="fs-6 mb-5">ABOUT THE NETWORK</h5>
@@ -60,8 +60,14 @@
                 </ul>      
             </nav>
         </div>
+        
         <div class="action">
-            <div class="d-flex row-cols-3 pb-5" >
+            <Cards />
+            <!-- <div class="d-flex row-cols-3 pb-5" >
+                <Cards v-for="(card, index) in cards" :key="index" 
+                :image="card.src" 
+                :title="card.title">
+                </Cards>
                 <div class="col">
                     <div class="project pe-5">
                         <img src="../assets/img/project-1.jpg" alt="">
@@ -78,8 +84,13 @@
                     </div>
                 </div>
             
-            </div>
-            <div class="d-flex row-cols-3 pb-5" >
+            </div> -->
+            <Cards/>
+            <!-- <div class="d-flex row-cols-3 pb-5" >
+                <Cards v-for="(card, index) in cards" :key="index" 
+                :image="card.src" 
+                :title="card.title">
+                </Cards>
                 <div class="col">
                     <div class="project pe-5">
                         <img src="../assets/img/project-4.jpg" alt="">
@@ -94,34 +105,78 @@
                     <div class="project pe-5">
                         <img src="../assets/img/project-6.jpg" alt="">
                     </div>
-                </div>
-            
-            </div>
+                </div> 
+            </div> -->
         </div>
+        
         
         
 
     </div>
+    <div class="results pt-5">
+        <Results/>
+    </div>
+    <div class="programs">
+        <div class="container">
+        
+            <Programs />
+        </div>
+    </div>
+    <div class="getTouch">
+        <div class="container">
+            <GetTouch />
+        </div>
+    </div>
+    
 
-  </div>
+</div>
 </template>
 
 <script>
+import Cards from './Cards.vue'
+import Results from './Results.vue'
+import Programs from './Programs.vue'
+import GetTouch from './GetTouch.vue'
 export default {
-
+name:"Main",
+components:{
+    Cards,
+    Results,
+    Programs,
+    GetTouch,
+    },
+    data() {
+    return {
+        cards: [
+            { 
+                title: "Learning to Write as a Professional Author",
+                src: "../assets/img/project-1.jpg"
+            },
+            { 
+                title: "Learning to Write as a Professional Author",
+                src: "../assets/img/project-2.jpg"
+            },
+            { 
+                title: "Learning to Write as a Professional Author",
+                src: "../assets/img/project-2.jpg"
+            },
+        ]
+}
+    }
 }
 </script>
 
 <style lang="scss">
+@import "../assets/scss/partials/_variables.scss";
 .container-fluid{
     // background-image: url("../assets/img/image.png");
     
     width: 100%;
     // padding-top: 3em;
     // margin-top: 5em;
-    .row{
-        background-color: black;
-    }
+    .black{
+            background-color: black;
+        }
     .company{
         color: white;
         width: 60%;
@@ -178,18 +233,31 @@ export default {
         }
         .action{
             background-color: white;
-            .project{
-                width: 100%;
-                flex-wrap: wrap;
+            // .project{
+            //     width: 100%;
+            //     flex-wrap: wrap;
                 
-                img{
-                    border-radius: 5%;
-                    width: 100%;
-                }
+            //     img{
+            //         border-radius: 5%;
+            //         width: 100%;
+            //     }
 
-            }
+            // }
         }
     }
+    .results{
+        background-image: url("../assets/img/bg-7.jpg");
+        background-position: center;
+        height: 100%;
+        width: 100%;
+
+    }
+    .programs{
+        filter: invert(0.80);
+        // color: $colorPrograms;
+        background-color: $colorPrograms;
+    }
+
 }
 
 </style>
