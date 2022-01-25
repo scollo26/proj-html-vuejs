@@ -1,0 +1,45 @@
+ul li{
+    list-style: none;
+}
+.container-fluid{
+    padding: 0;
+}
+.height-30{
+    height: 70px;
+}
+.green{
+    color: #29B5C0;
+}
+.button-1{
+    background-color: #1c918e;
+    color: white;
+}
+
+.button-1:hover{
+    background-color:#52bbba ;
+    color: white;
+}
+
+.button-2{
+    color: white;
+    border: 1px solid #1c918e;
+}
+
+.button-2:hover{
+    background-color:#52bbba ;
+    color: white;
+}
+.background{
+    display: inline-block;
+    background-color: #0D272D;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+.background-light{
+    display: inline-block;
+    background-color: #CCE3DE;
+    color: #058283;
+    padding: 6px;
+    border-radius: 5px;
+}

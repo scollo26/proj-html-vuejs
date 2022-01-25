@@ -1,10 +1,10 @@
 <template>
 
 <div class=" container-100 ">
-    <div class="header-top color-top">
-        <div class="container">
-            <div class="row row-col-2 ">
-                <div class="col">
+    <div class="header-top color-top ">
+        <div class="container ">
+            <div class="row row-col-2">
+                <div class="col ">
                     <i class="fas fa-clock pt-3"></i>
                     <span>Open Hours: Mon-Sat- 9:00-18:00</span>
                 
@@ -24,10 +24,12 @@
     </div> 
     
         <div class="container ">
-            <div  class="d-flex bd-highlight">
+            <div  class="d-flex bd-highlight mt-4">
                 <div class="p-2 flex-grow-1 bd-highlight">
-                    <span class="green fs-2">NEX</span>
-                    <span class="black fs-2">GEN</span>    
+                    <div class="title-left">
+                        <span class="next ">NEX</span>
+                    </div>
+                    <span class="gen">GEN</span>    
                 </div>
             
                 <div id="" class="p-2 bd-highlight">
@@ -37,7 +39,7 @@
                         <li><a href="http://"> ABOUT</a></li>
                         <li><a href="http://"> PROJECT</a></li>
                         <li><a href="http://"> RESULTS</a></li>
-                        <button class="btn btn-outline-secondary ms-3 " type="submit">GET IN TOUCH</button>
+                        <button class="btn button-1 ms-3 " type="submit">GET IN TOUCH</button>
                     </ul>
                 </div>
         
@@ -51,11 +53,11 @@
                 <!-- <img src="../assets/img/bg-parallax.png" alt=""> -->
                 <div class="banner-jumbo text-center">
                     <span class="black fs-1 fw-bold">Ready</span>
-                    <span class="green fs-1 fw-bold">Team</span> 
+                    <span class="background-light fs-1 fw-bold">Team</span> 
                     <p>No matter what your company needs, we will be </p> 
                     <p>ready to assist you in the best possible way.</p>
-                    <button class="btn btn-outline-secondary ms-3 " type="submit">GET IN TOUCH</button>
-                    <button type="button" class="btn btn-outline-success  green ms-3">READ MORE</button>
+                    <button class="btn button-1  ms-3 " type="submit">GET IN TOUCH</button>
+                    <button type="button" class="btn button-2 ms-3">READ MORE</button>
                 </div>
         
             </div>  
@@ -63,13 +65,13 @@
         <div class="header-bottom pt-5 ">   
             <div class="container">
                 <p class="green"> OUR BUSINESS AREAS</p>
-                <h2 class="black fw-bold"> Excellence in <span class="green">Service</span></h2>
+                <h2 class="black fw-bold"> Excellence in <span class="background-light">Service</span></h2>
                 <div class="row row-col-2 ">
                     <div class="col">
                         <p>we are leaders in providing consultancy services with a set of cutting-edge technologies and a team of experienced and renowed professionals.These are some options that you can hire.</p>
                     </div>
-                    <div class="col d-flex justify-content-end">
-                        <button type="button height: 10px " class="btn btn-outline-success  green ">SEE ALL</button>
+                    <div class="col d-flex justify-content-end height-30">
+                        <button class="btn button-1 ms-3 " type="submit">SEE ALL</button>
                     </div>
                 </div>
                 <div class="row row-cols-3 pb-5" >
@@ -122,7 +124,7 @@
                             
                         </div>
                     </div>
-                     <div class="col">
+                    <div class="col">
                         <div class="business">
                             <div class="d-flex justify-content-between p-4">
                     
@@ -139,7 +141,7 @@
                             
                         </div>
                     </div>
-                     <div class="col">
+                    <div class="col">
                         <div class="business">
                             <div class="d-flex justify-content-between p-4">
                                 
@@ -156,7 +158,7 @@
                             
                         </div>
                     </div>
-                     <div class="col">
+                    <div class="col">
                         <div class="business">
                             <div class="d-flex justify-content-between p-4">
                                 
@@ -196,13 +198,14 @@ export default {
 </script>
 
 <style lang="scss">
+@import "../assets/scss/partials/_commons.scss";
 .container-100{
     width: 100%;
-   
     .container{
         // background-color: #122439;
-        height: 50px;
+        height: 80px;
         color: grey;
+        
             .p-2{
             width: 100%;
             ul{
@@ -219,27 +222,56 @@ export default {
 
         }   
     }
+    .button-1{
+    background-color: #1c918e;
+    color: white;
+    }
+
+    .button-1:hover{
+        background-color:#52bbba ;
+        color: white;
+    }
+    .button-2{
+    color: #1c918e;
+    border: 1px solid #1c918e;
+    }
+
+    .button-2:hover{
+        background-color:#52bbba ;
+        color: white;
+        }
     
         .color-top{
             background-color: #122439;
         }
-        .green{
-            color: #1c918e;
+        .title-left{
+            display: inline-block;
+            
+            span{
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 1em;
+                
+            }
+            .next{
+                color: #52bbba;
+                background-color: #CAE4E4;
+                border-top-left-radius: 25px;
+                border-bottom-left-radius: 25px;
+                padding: 10px 0 10px 30px;
+                margin-right: 2px;
+                
+            }
         }
-        .black{
+        .gen{
             color: black;
+            
         }
         .icon-top{
             i{
                 padding: 1em;
             }
             
-        }
-        .btn-outline-secondary{
-            color: white;
-            background-color: #1c918e;
-            
-
         }
         
     .jumbo{

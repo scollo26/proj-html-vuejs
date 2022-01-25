@@ -3,8 +3,8 @@
     <!-- prima colonna form -->
     <div class="col ">
         <div class="form ps-5 ms-5">
-            <p class="green">SEND A MESSAGE</p>
-            <h2 class="fw-bolder">Get in <span class="green grey fw-bolder">Touch</span></h2>
+            <p class="green fw-bolder">SEND A MESSAGE</p>
+            <h2 class="fw-bolder">Get in <span class="background-light fw-bolder">Touch</span></h2>
             <p>We will respond to your message as soon as possible.</p>
 
 
@@ -38,7 +38,7 @@
                     <textarea class="form-control" id="Textarea" rows="3" placeholder="Message"></textarea>
                 </div>
                 <div class="col-12">
-                    <button class="btn btn-outline-secondary ms-3 " type="submit">GET IN TOUCH</button>
+                    <button class="btn button-1  ms-3 " type="submit">SEND</button>
                 </div>
             </form>
         </div>
@@ -57,7 +57,7 @@
                 <li><i class="fas fa-map-marker-alt"></i>
                 <span class="ms-2">Main Avenue, 987</span> </li>
             </ul>
-            <button class="btn btn-outline-secondary ms-3 " type="submit">VIEW MAP</button>
+            <button class="btn button-1 ms-3 " type="submit">VIEW MAP</button>
         </div>
         
 
@@ -74,6 +74,8 @@ export default {
 
 <style lang="scss">
 @import "../assets/scss/partials/_variables.scss";
+@import "../assets/scss/partials/_commons.scss";
+
 .green{
     color: $colorGreen;
     
@@ -90,6 +92,8 @@ export default {
     background-color: rgb(236, 232, 232);
     border: 0;
 }
+
+
 .contact{
     ul{
         list-style-type: none;
@@ -102,7 +106,7 @@ export default {
             vertical-align: middle;
             width: 40px;
             height: 40px;
-            background-color: lightgrey;
+            background-color: #DAECED;
             border-radius: 50%;
             color: $colorGreen;
 

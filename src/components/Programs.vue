@@ -36,11 +36,11 @@ export default {
 }
 </script>
 
-<style lang="scss" >
+<style lang="scss" scoped >
 @import "../assets/scss/partials/_variables.scss";
 .col{
     img{
-        width: 60%;
+        filter: invert(1);
         
     }
     .resize{

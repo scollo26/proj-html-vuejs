@@ -4,7 +4,7 @@
         <div class="col-6 text-start ">
             <div class="company ">
                 <h5 class="fs-6 mb-5">ABOUT THE NETWORK</h5>
-                <h2 class="fs-1"><span class="the">The</span>  Company</h2>
+                <h2 class="fs-1"><span class="background">The</span>  Company</h2>
                 <p>For 12 years we have been providing audit and warranty, financial advice, risk advice, taxes and related services to select clients</p>
                 <div class="row row-cols-2 d-flex " >
                     <div class="col text-start">
@@ -30,8 +30,8 @@
                 </div>
                 
                 
-                <button class="btn btn-outline-secondary ms-3 " type="submit">GET IN TOUCH</button>
-                <button type="button" class="btn btn-outline-success  green ms-3">READ MORE</button>
+                <button class="btn button-1  ms-3 " type="submit">GET IN TOUCH</button>
+                <button type="button" class="btn button-2 ms-3">READ MORE</button>
                 
             </div>
         </div>
@@ -44,9 +44,9 @@
         </div>
     </div>
     
-    <div class="container-main">
-        <p> WE DO MORE FOR EVERYONE</p>
-        <h2>Actions & <span>Projects</span></h2>
+    <div class="container-main mt-5">
+        <p class="green fw-bolder"> WE DO MORE FOR EVERYONE</p>
+        <h2 class="fw-bolder">Actions & <span class="background-light fw-bolder">Projects</span></h2>
         <div class="menu-main">
             <nav>
                 <ul>
@@ -168,6 +168,7 @@ components:{
 
 <style lang="scss">
 @import "../assets/scss/partials/_variables.scss";
+@import "../assets/scss/partials/_commons.scss";
 .container-fluid{
     // background-image: url("../assets/img/image.png");
     
@@ -183,18 +184,21 @@ components:{
         margin-left: 40%;
         margin-top: 10em;
         h5{
-           color: #8fff; 
+            color: #8fff; 
         }
-        .the{
-            background-color: #1c918e;
-            border-radius: 10%;
-            opacity: 0.8;
-        }
+        
         i{
             color: #1c918e;
         }
     }
-
+    .button-1{
+    background-color: #1c918e;
+    color: white;
+    }
+    .button-2{
+    color: white;
+    border: 1px solid #1c918e;
+    }
 
 
     .img-company{
@@ -233,29 +237,23 @@ components:{
         }
         .action{
             background-color: white;
-            // .project{
-            //     width: 100%;
-            //     flex-wrap: wrap;
-                
-            //     img{
-            //         border-radius: 5%;
-            //         width: 100%;
-            //     }
-
-            // }
         }
     }
     .results{
         background-image: url("../assets/img/bg-7.jpg");
         background-position: center;
-        height: 100%;
+        
         width: 100%;
 
     }
     .programs{
-        filter: invert(0.80);
-        // color: $colorPrograms;
-        background-color: $colorPrograms;
+        background-color: #111116;
+        img{
+            width: 40%;
+            filter: invert(1);
+        }
+        
+        
     }
 
 }
