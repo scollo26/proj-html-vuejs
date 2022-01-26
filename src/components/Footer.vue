@@ -22,12 +22,12 @@
           <div class="container-footer">
             <h3>About</h3>
             <ul>
-              <li><i class="fas fa-chevron-right me-2"></i>The company</li>
-              <li><i class="fas fa-chevron-right me-2"></i>Institutional</li>
-              <li><i class="fas fa-chevron-right me-2"></i>Social & Events</li>
-              <li><i class="fas fa-chevron-right me-2"></i>Innovation</li>
-              <li><i class="fas fa-chevron-right me-2"></i>Environment</li>
-              <li><i class="fas fa-chevron-right me-2"></i>Thecnology</li>
+              <li><i class="fas fa-chevron-right me-2"></i><a href="http://">The company</a></li>
+              <li><i class="fas fa-chevron-right me-2"></i><a href="http://">Institutional</a></li>
+              <li><i class="fas fa-chevron-right me-2"></i><a href="http://">Social & Events</a> </li>
+              <li><i class="fas fa-chevron-right me-2"></i><a href="http://">Innovation</a> </li>
+              <li><i class="fas fa-chevron-right me-2"></i><a href="http://">Environment</a> </li>
+              <li><i class="fas fa-chevron-right me-2"></i><a href="http://">Thecnology</a> </li>
             </ul>
 
           </div>
@@ -36,12 +36,12 @@
           <div class="container-footer">
             <h3>Services</h3>
             <ul>
-              <li><i class="fas fa-chevron-right me-2"></i>Audit & Assurance</li>
-              <li><i class="fas fa-chevron-right me-2"></i>Financial Advisory</li>
-              <li><i class="fas fa-chevron-right me-2"></i>Analytics M&A</li>
-              <li><i class="fas fa-chevron-right me-2"></i>Middle Marketing</li>
-              <li><i class="fas fa-chevron-right me-2"></i>Legal Consulting</li>
-              <li><i class="fas fa-chevron-right me-2"></i>Regulatory Risk</li>
+              <li><i class="fas fa-chevron-right me-2"></i><a href="http://">Audit & Assurance</a></li>
+              <li><i class="fas fa-chevron-right me-2"></i><a href="http://">Financial Advisory</a></li>
+              <li><i class="fas fa-chevron-right me-2"></i><a href="http://">Analytics M&A</a></li>
+              <li><i class="fas fa-chevron-right me-2"></i><a href="http://">Middle Marketing</a></li>
+              <li><i class="fas fa-chevron-right me-2"></i><a href="http://">Legal Consulting</a></li>
+              <li><i class="fas fa-chevron-right me-2"></i><a href="http://">Regulatory Risk</a></li>
             </ul>
 
           </div>
@@ -50,12 +50,12 @@
           <div class="container-footer">
             <h3>Support</h3>
             <ul>
-              <li><i class="fas fa-chevron-right me-2"></i>Responsability</li>
-              <li><i class="fas fa-chevron-right me-2"></i>Terms of Use</li>
-              <li><i class="fas fa-chevron-right me-2"></i>About Cookies</li>
-              <li><i class="fas fa-chevron-right me-2"></i>Privacy Policy</li>
-              <li><i class="fas fa-chevron-right me-2"></i>Accessibility</li>
-              <li><i class="fas fa-chevron-right me-2"></i>Information</li>
+              <li><i class="fas fa-chevron-right me-2"></i><a href="http://">Responsability</a></li>
+              <li><i class="fas fa-chevron-right me-2"></i><a href="http://">Terms of Use</a></li>
+              <li><i class="fas fa-chevron-right me-2"></i><a href="http://">About Cookies</a></li>
+              <li><i class="fas fa-chevron-right me-2"></i><a href="http://">Privacy Policy</a></li>
+              <li><i class="fas fa-chevron-right me-2"></i><a href="http://">Accessibility</a></li>
+              <li><i class="fas fa-chevron-right me-2"></i><a href="http://">Information</a></li>
             </ul>
 
           </div>
@@ -69,7 +69,7 @@
             <p>Enjoy the low price. we are tracking any intention of piracy</p>
           </div>
           <div class="col">
-            <p>2020 NEXGEN is Proudly Powered by <span class="green"> Codings</span> </p>
+            <p>©2020 NEXGEN is Proudly Powered by <span class="green"> Codings</span> </p>
           </div>
         
         <div>
@@ -147,6 +147,15 @@ export default {
     li{
       padding: 5px;
       margin: 0px;
+      a{
+        cursor: pointer;
+        text-decoration: none;
+        color: grey;
+      }
+
+      a:hover{
+        color: #52bbba;
+      }
       
       
     }

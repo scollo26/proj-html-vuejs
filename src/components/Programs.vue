@@ -1,5 +1,5 @@
 <template>
-
+<!-- inserimento sei immagini dei programmi -->
 <div class="row row-cols-6 pt-5 pb-5">
     <div class="col">
         <img src="../assets/img/logo-4.png" alt="">

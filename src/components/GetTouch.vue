@@ -13,11 +13,12 @@
             <form class="row g-3">
                 <div class="col-md-6">
                     <label for="inputEmail4" class="form-label"></label>
-                    <input type="email" class="form-control" id="inputName"
+                    <input type="email"  class="form-control bgx" id="inputName"
                     placeholder="Name">
+                    
                 </div>
                 <div class="col-md-6">
-                    <label for="inputPassword4" class="form-label"></label>
+                    <label for="inputPassword4" class="form-label "></label>
                     <input type="password" class="form-control" id="inputEmail"
                     placeholder="Email">
                 </div>
@@ -27,8 +28,8 @@
                     placeholder="Phone">
                 </div>
                 <div class="col-md-6">
-                    <label for="inputState" class="form-label"></label>
-                    <select id="inputInfo" class="form-select" >
+                    <label for="inputState" class="form-label "></label>
+                    <select id="inputInfo" class="form-select " >
                         <option selected > More info</option>
                         <option>...</option>
                     </select>
@@ -57,7 +58,7 @@
                 <li><i class="fas fa-map-marker-alt"></i>
                 <span class="ms-2">Main Avenue, 987</span> </li>
             </ul>
-            <button class="btn button-1 ms-3 " type="submit">VIEW MAP</button>
+            <button id="button-2" class="btn  ms-3 " type="submit">VIEW MAP</button>
         </div>
         
 
@@ -74,7 +75,14 @@ export default {
 
 <style lang="scss">
 @import "../assets/scss/partials/_variables.scss";
-@import "../assets/scss/partials/_commons.scss";
+// @import "../assets/scss/partials/_commons.scss";
+
+.bgx{
+    background-image: url('../assets/img/image (1).png');
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+}
 
 .green{
     color: $colorGreen;
@@ -113,6 +121,16 @@ export default {
             }
         }
         
+    }
+    
+    #button-2{
+        color: #1c918e;
+        border: 1px solid #1c918e;
+    }
+
+    #button-2:hover{
+        background-color:#52bbba ;
+        color: white;
     }
 }
 

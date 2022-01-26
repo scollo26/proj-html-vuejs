@@ -1,18 +1,19 @@
 <template>
-<!-- <div class="col">
+<!-- inserimento 6 card in modo dinamico -->
+<div class="col d-flex row-cols-3 pb-5 ">
     <div class="card-item">
-        <div class="project pe-5">
+        <div class="project ">
             <img :src="image" :alt="title">
         </div>
         <div class="info-hover p-3">
             <div class="info">
-                <div>{{title}}</div> 
+                <div class="fs-3 fw-bolder">{{title}}</div> 
             </div>
         </div>
     </div>
     
-</div> -->
-<div class="d-flex row-cols-3 pb-5" >
+</div>
+<!-- <div class="d-flex row-cols-3 pb-5" >
                 
     <div class="col">
         <div class="card-item">
@@ -50,13 +51,12 @@
             </div>
         </div>
     </div>
-</div> 
+</div>  -->
 </template>
 
 <script>
 export default {
     name:"Card",
-    // variabili prese da array searchMovie in Main
     props: [
         'title',
         'image',
@@ -80,7 +80,7 @@ export default {
         flex-direction: column;
         align-items: center;
         // border: 1px solid white;
-        // width: 14em;
+        width: 80%;
         .project {
             height: 100%;
             width: 100%;

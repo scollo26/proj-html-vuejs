@@ -1,4 +1,5 @@
 <template>
+<!-- inserimento tabella con risultati numerici -->
 <div class="containre-100">
     <div class="container text-center mt-5">
         <h6 class="green"> WHAT ARE WE DOING</h6>

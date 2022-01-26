@@ -1,4 +1,5 @@
 <template>
+<!-- inserimento company più immagine grande sulla destra -->
   <div class="container-fluid">
     <div class="row black row-cols-2 d-flex  justify-content-evenly" >
         <div class="col-6 text-start ">
@@ -43,7 +44,7 @@
             
         </div>
     </div>
-    
+        <!-- inserimento menu Projects -->
     <div class="container-main mt-5">
         <p class="green fw-bolder"> WE DO MORE FOR EVERYONE</p>
         <h2 class="fw-bolder">Actions & <span class="background-light fw-bolder">Projects</span></h2>
@@ -51,7 +52,7 @@
             <nav>
                 <ul>
                     <li><a class="active" href="http://">ALL</a></li>
-                    <li><a href="http://"></a>INSTITUTIONAL</li>
+                    <li><a  href="http://">INSTITUTIONAL</a></li>
                     <li><a href="http://">SOCIAL</a> </li>
                     <li><a href="http://">EVENTS</a> </li>
                     <li><a href="http://">INNOVATION</a> </li>
@@ -60,15 +61,15 @@
                 </ul>      
             </nav>
         </div>
-        
+        <!-- richiamo figlio Cards per le 6 immagini con hover -->
         <div class="action">
-            <Cards />
-            <!-- <div class="d-flex row-cols-3 pb-5" >
+            <!-- <Cards /> -->
+            <div class="d-flex row-cols-3 pb-5 flex-wrap" >
                 <Cards v-for="(card, index) in cards" :key="index" 
                 :image="card.src" 
                 :title="card.title">
                 </Cards>
-                <div class="col">
+                <!-- <div class="col">
                     <div class="project pe-5">
                         <img src="../assets/img/project-1.jpg" alt="">
                     </div>
@@ -83,9 +84,9 @@
                         <img src="../assets/img/project-3.jpg" alt="">
                     </div>
                 </div>
-            
-            </div> -->
-            <Cards/>
+             -->
+            </div>
+            <!-- <Cards/> -->
             <!-- <div class="d-flex row-cols-3 pb-5" >
                 <Cards v-for="(card, index) in cards" :key="index" 
                 :image="card.src" 
@@ -113,15 +114,17 @@
         
 
     </div>
+    <!-- richiamo figlio Ressults con tabella numeri -->
     <div class="results pt-5">
         <Results/>
     </div>
+    <!-- richiamo figlio programs per immagini programmi -->
     <div class="programs">
         <div class="container">
-        
             <Programs />
         </div>
     </div>
+    <!-- richiamo figlio GetTouch per inserimento form -->
     <div class="getTouch">
         <div class="container">
             <GetTouch />
@@ -149,16 +152,28 @@ components:{
     return {
         cards: [
             { 
-                title: "Learning to Write as a Professional Author",
-                src: "../assets/img/project-1.jpg"
+                title: "Academic professional program in social media",
+                src: require("../assets/img/project-1.jpg")
             },
             { 
-                title: "Learning to Write as a Professional Author",
-                src: "../assets/img/project-2.jpg"
+                title: "President's speech atthe annual meeting",
+                src: require("../assets/img/project-2.jpg")
             },
             { 
-                title: "Learning to Write as a Professional Author",
-                src: "../assets/img/project-2.jpg"
+                title: "International business trip in Shanghai",
+                src: require("../assets/img/project-3.jpg")
+            },
+             { 
+                title: "Technology workshop with education theme",
+                src: require("../assets/img/project-4.jpg")
+            },
+             { 
+                title: "Donation of clothes and food to the partner NGO",
+                src: require("../assets/img/project-5.jpg")
+            },
+             { 
+                title: "Confraternization of the procurement team",
+                src: require("../assets/img/project-6.jpg")
             },
         ]
 }
@@ -170,17 +185,13 @@ components:{
 @import "../assets/scss/partials/_variables.scss";
 @import "../assets/scss/partials/_commons.scss";
 .container-fluid{
-    // background-image: url("../assets/img/image.png");
-    
     width: 100%;
-    // padding-top: 3em;
-    // margin-top: 5em;
     .black{
             background-color: black;
         }
     .company{
         color: white;
-        width: 60%;
+        width: 45%;
         margin-left: 40%;
         margin-top: 10em;
         h5{
@@ -217,12 +228,16 @@ components:{
                     li{
                         display: inline-block;
                         a{
-
-                            padding: 0.5em 0.5em;
-                            margin-left: 3%;
                             text-decoration: none;
-                            color:gray;
+                            padding: 0.5em 0.5em;
+                            color: grey;
     
+                        }
+                        a:hover{
+                            color: #29B5C0;
+                            margin-left: 3%;
+                            
+                            
                         }
 
                     } 
