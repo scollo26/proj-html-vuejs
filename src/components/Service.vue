@@ -8,7 +8,7 @@
             <div class="col">
                 <p>we are leaders in providing consultancy services with a set of cutting-edge technologies and a team of experienced and renowed professionals.These are some options that you can hire.</p>
             </div>
-            <div class="col d-flex justify-content-end height-30">
+            <div class="col d-flex justify-content-end height-70">
                 <button class="btn button-1 ms-3 " type="submit">SEE ALL</button>
             </div>
         </div>
@@ -124,14 +124,13 @@ export default {
                     
                     
                     // display: block;
-                    color: #52bbba;
+                    color: #038484;
                     opacity: 0.8;
                     
                 }
                 
             }
             .arrow:hover i{
-                
                 color: #038484;
                 background-color: #52bbba;
                 display: block;

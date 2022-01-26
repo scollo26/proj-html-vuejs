@@ -3,7 +3,7 @@
     <!-- prima colonna form -->
     <div class="col ">
         <div class="form ps-5 ms-5">
-            <p class="green fw-bolder">SEND A MESSAGE</p>
+            <p class="green fw-bold">SEND A MESSAGE</p>
             <h2 class="fw-bolder">Get in <span class="background-light fw-bolder">Touch</span></h2>
             <p>We will respond to your message as soon as possible.</p>
 
@@ -27,7 +27,7 @@
                     <input type="password" class="form-control" id="inputPhone"
                     placeholder="Phone">
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 verde">
                     <label for="inputState" class="form-label "></label>
                     <select id="inputInfo" class="form-select " >
                         <option selected > More info</option>
@@ -99,6 +99,9 @@ export default {
     
     background-color: rgb(236, 232, 232);
     border: 0;
+}
+#inputInfo{
+    color: grey;
 }
 
 

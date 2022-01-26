@@ -24,15 +24,16 @@
     </div> 
         <!-- Header menu -->
         <div class="container ">
-            <div  class="d-flex bd-highlight mt-4">
-                <div class="p-2 flex-grow-1 bd-highlight">
+            <div  class="d-flex mt-4">
+                <div class="p-2 flex-grow-1">
                     <div class="title-left">
                         <span class="next ">NEX</span>
+                        <span class="gen">GEN</span>
                     </div>
-                    <span class="gen">GEN</span>    
+                        
                 </div>
             
-                <div class="p-2 bd-highlight">
+                <div class="p-2">
                     <ul  v-for="(menu, index) in menus" :key="index">
                         <li><a class="fw-bolde" href="http://"> {{menu.link}}</a></li>
                         <!-- <li><a href="http://"> SERVICES</a></li>
@@ -52,9 +53,9 @@
         <div class="jumbo">
             <div class="jumbo-img">
                 <div class="banner-jumbo text-center">
-                    <span class="black fs-1 fw-bold">Ready</span>
+                    <span class="black fs-1 fw-bolder">Ready</span>
                     <span class="background-light fs-1 fw-bold">Team</span> 
-                    <p>No matter what your company needs, we will be </p> 
+                    <p class="mb-0">No matter what your company needs, we will be </p> 
                     <p>ready to assist you in the best possible way.</p>
                     <button class="btn button-1  ms-3 " type="submit">GET IN TOUCH</button>
                     <button type="button" class="btn button-2 ms-3">READ MORE</button>
@@ -148,10 +149,10 @@ export default {
     border: 1px solid #1c918e;
     }
 
-    .button-2:hover{
+    #button-2:hover{
         background-color:#52bbba ;
         color: white;
-        }
+    }
     
         .color-top{
             background-color: #122439;
@@ -162,7 +163,7 @@ export default {
             span{
                 text-transform: uppercase;
                 font-weight: bold;
-                font-size: 1em;
+                font-size: 1.3em;
                 
             }
             .next{
@@ -202,10 +203,12 @@ export default {
             
         }
         .banner-jumbo{  
-            color: $colorBlack;
             margin-top: 10em;
-            
+            p{
+                color:Grey;
             }
+            
+        }
         
     }
     

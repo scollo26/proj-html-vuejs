@@ -1,6 +1,5 @@
 <template>
 <!-- inserimento tabella con risultati numerici -->
-<div class="containre-100">
     <div class="container text-center mt-5">
         <h6 class="green"> WHAT ARE WE DOING</h6>
         <h2 class="fw-bolder fs-1 white"><span class=" background">Results</span>  in Numers</h2>
@@ -28,7 +27,7 @@
         </div>
         
     </div>
-</div>
+
 </template>
 
 <script>
@@ -51,8 +50,6 @@ export default {
             background-color: white;
         }
     }
-  
- 
 }
 .green{
     color: $colorGreen;

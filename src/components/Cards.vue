@@ -5,7 +5,7 @@
         <div class="project ">
             <img :src="image" :alt="title">
         </div>
-        <div class="info-hover p-3">
+        <div class="info-hover">
             <div class="info">
                 <div class="fs-3 fw-bolder">{{title}}</div> 
             </div>

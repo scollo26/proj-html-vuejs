@@ -44,8 +44,8 @@ export default {
         
     }
     .resize{
-            width: 30%;
-        }
+        width: 30%;
+    }
 }
 
 
